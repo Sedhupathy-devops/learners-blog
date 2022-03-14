@@ -26,6 +26,11 @@ img{
     padding: 0 1.2rem;
 }
 
+.linux-main{
+    background: none !important;
+    min-height: 10vh !important;
+    background-color: black !important;
+}
 /* header */
 header{
     min-height: 100vh;
@@ -35,10 +40,20 @@ header{
     justify-content: stretch;
 }
 
+.linux_image{
+    width:15% !important;
+    height: 10% !important;
+}
+
 .header-main{
     min-height: 70vh !important;
-    background: url(images/linux-one.jpg) center/cover no-repeat fixed !important;
+    background: url(images/linux.png) center/cover no-repeat fixed !important;
     
+}
+
+.header-main-web{
+    min-height: 70vh !important;
+    background: url(images/web.jpg) center/cover no-repeat fixed !important;
 }
 .navbar{
     background: rgba(0, 0, 0, 0.6);
