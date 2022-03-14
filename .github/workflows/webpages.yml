@@ -1,0 +1,24 @@
+name: webpages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/pages/**"
+  pull_request:
+    paths:
+      - "docs/pages/**"
+      
+jobs:
+  webpage-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name:  modify template
+        run: |
+            cd docs
+            bash index.sh
+            bash linux.sh
+            bash web.sh
+      - uses: EndBug/add-and-commit@v9
