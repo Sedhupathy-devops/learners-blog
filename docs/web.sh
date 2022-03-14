@@ -3,7 +3,7 @@ HTMLWEB="${HTMLWEB}\n<div class=\"linux-blog\">"
     LINUX_BLOGS=$(ls pages)
     for i in ${LINUX_BLOGS}; do
     if [[ $( echo $i| grep "web"|wc -l ) == 1 ]];then
-    HTMLWEB="${HTMLWEB}\n<h1>"$(echo $i | sed 's/linux.html/ /g'| sed 's/-/ /g')"</h1><img src=\"images/web-1.jpg\" class=\"linux_image\"/><p class=\"para-content\"> \n<a href="pages/$i">Click here to read more</a> </p>"
+    HTMLWEB="${HTMLWEB}\n<h1>"$(echo $i | sed 's/web.html/ /g'| sed 's/-/ /g')"</h1><img src=\"images/web-1.jpg\" class=\"linux_image\"/><p class=\"para-content\"> \n<a href="pages/$i">Click here to read more</a> </p>"
 fi
 done
 HTMLWEB="${HTMLWEB}</div></body></html>"
