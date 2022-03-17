@@ -1,11 +1,11 @@
 name: webpages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "docs/pages/**"
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - "docs/pages/**"
   pull_request:
     paths:
       - "docs/pages/**"
